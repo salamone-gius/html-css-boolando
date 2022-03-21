@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 900px;
+    width: 1300px;
     margin: auto;
     padding: 5px 0;
     background-color: white;
@@ -38,7 +38,7 @@ body {
 .box {
     width: calc(100% / 3 - 10px);
     /* width: 157px; */
-    min-height: 300px;
+    /* min-height: 300px; */
     margin: 0 5px;
     float: left;
     position: relative;
@@ -58,7 +58,15 @@ img {
 
 .tally {
     position: absolute;
-    bottom: 15px;
+    top: 85%;
+}
+
+span {
+    font-size: 12px;
+    line-height: 12px;
+    vertical-align: middle;
+    height: 12px;
+    /* display: inline-block; */
 }
 
 .discount {
@@ -70,12 +78,35 @@ img {
 }
 
 .tally span {
-    height: 15px;
     color: white;
-    font-size: 10px;
     font-weight: bold;
-    display: inline-block;
-    line-height: 15px;
-    vertical-align: middle;
     padding: 0 3px;
 }
+
+.price-on-sale {
+    color: red;
+    font-weight: bold;
+}
+
+.price {
+    text-decoration: line-through;
+    /* non riesco a centrare la line-through */
+}
+
+.first-img {
+    display: block;
+}
+
+.hover-img {
+    display: none;
+}
+
+.box:hover .first-img {
+    display: none;
+}
+
+.box:hover .hover-img {
+    display: block;
+}
+
+
