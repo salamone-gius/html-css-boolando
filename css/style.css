@@ -8,6 +8,20 @@
 }
 
 
+
+body {
+    background-color: rgb(238, 243, 250);
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+    padding: 5px 0;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+
 /* ------------
     common
 ------------ */
@@ -26,23 +40,42 @@
     /* width: 157px; */
     min-height: 300px;
     margin: 0 5px;
-    background-color: rgb(65, 65, 230);
-    border: 2px solid red;
     float: left;
+    position: relative;
 }
 
-
-
-
-
-body {
-    background-color: rgb(238, 243, 250);
+img {
+    width: 100%;
 }
 
-.container {
-    width: 900px;
-    margin: auto;
-    padding: 5px 0;
+.wishlist {
+    padding: 2px 8px;
     background-color: white;
+    position: absolute;
+    top: 20px;
+    right: 0;
 }
 
+.tally {
+    position: absolute;
+    bottom: 15px;
+}
+
+.discount {
+    background-color:rgb(235, 0, 55) ;
+}
+
+.sustainability {
+    background-color: rgb(0, 135, 90);
+}
+
+.tally span {
+    height: 15px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 15px;
+    vertical-align: middle;
+    padding: 0 3px;
+}
